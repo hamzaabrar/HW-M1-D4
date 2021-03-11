@@ -58,7 +58,19 @@ Write a function "boundary" which accept an integer n and returns true if n is w
 */
 
 /* WRITE YOUR CODE HERE */
-
+const boundary = function (n) {
+    if (n >= 20 && n <= 100) {
+        return true
+    }
+    if (n == 400) {
+        return true
+    }
+}
+// console.log(boundary(19))
+// console.log(boundary(58))
+// console.log(boundary(100))
+// console.log(boundary(101))
+// console.log(boundary(400))
 /* EXERCISE 5
 Write a function "strivify" which accepts a string.
 It should add the word "Strive" in front of the given string, but if the given string already begins with "Strive", then it should just return the original string.
