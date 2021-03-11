@@ -43,7 +43,16 @@ const crazySum = function (i1, i2) {
 Write a function "crazyDiff" that computes the absolute difference between a given number and 19. 
 It should return triple their absolute difference if the given number is greater than 19.
 */
-
+const crazyDiff = function (n) {
+    if (n <= 19) {
+        let difference = 19 - n
+        return difference
+    }
+    else {
+        let difference = (n - 19) * 3
+        return difference
+    }
+}
 /* EXERCISE 4
 Write a function "boundary" which accept an integer n and returns true if n is within 20 and 100 (included) or if it's equal to 400.
 */
@@ -73,17 +82,6 @@ HINT: Module Operator
 */
 
 /* WRITE YOUR CODE HERE */
-const reverseString = function(reverseStr){
-    console.log(reverseStr.split("").reverse().join(""))
-}
-reverseString(`Smile`)
-reverseString(`HooRay`)
-
-/* EXERCISE 7
-Write a function "reverseString" to programmatically reverse a given string (es.: Strive => evirtS).
-*/
-
-/* WRITE YOUR CODE HERE */
 function check3and7(x) 
 {
   if (x % 3 == 0 || x % 7 == 0) 
@@ -99,14 +97,23 @@ console.log(check3and7(21));
 console.log(check3and7(8));
 console.log(check3and7(20));
 console.log(check3and7(45));
+/* EXERCISE 7
+Write a function "reverseString" to programmatically reverse a given string (es.: Strive => evirtS).
+*/
 
+/* WRITE YOUR CODE HERE */
+const reverseString = function(reverseStr){
+    console.log(reverseStr.split("").reverse().join(""))
+}
+reverseString(`Smile`)
+reverseString(`HooRay`)
 /* EXERCISE 8
 Write a function "upperFirst" to capitalize the first letter of each word of a given string passed as a parameter.
 */
 
 /* WRITE YOUR CODE HERE */
 
-// console.log(cutString("Test"))
+
 
 /* EXERCISE 9
 Write a function "cutString" to create a new string without the first and last character of a given string.
