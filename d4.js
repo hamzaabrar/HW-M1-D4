@@ -9,13 +9,19 @@ ASSIGNMENT RULES
 /* EXERCISE 1
 Write a function "area" which receives 2 parameters (l1,l2) and calculates the area of the associated rectangle.
 */
-const area = function(l1,l2) {
-    let length = l1 * l2
+// const area = function(l1,l2) {
+//     let length = l1 * l2
 
-    return length
-}
+//     return length
+// }
 
 // console.log(area(5,5))
+
+const area = function(l1,l2) {
+    return l1 *l2
+}
+
+console.log(area(5,5))
 /* EXERCISE 2
 Write a function "crazySum" which receives two integers. It should return the sum of those two values, but if the two values are the same then it should return their sum multiplied by 3.
 */
