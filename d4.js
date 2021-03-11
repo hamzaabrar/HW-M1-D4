@@ -141,7 +141,14 @@ Write a function "giveMeRandom" which accepts a number n and returns an array co
 */
 
 /* WRITE YOUR CODE HERE */
-
+const giveMeRandom = function (n) {
+    let array=[]
+    for (i=0;i<n;i++){
+        array[i]=Math.floor(Math.random() * 11); 
+    }
+    return array
+}
+// console.log(giveMeRandom(9))
 
 /* WHEN YOU ARE FINISHED
 Commit and push the code to your personal GitHub repository and share the link to your commit in Eduflow.
